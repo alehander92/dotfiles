@@ -1,0 +1,33 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+set ts=4
+set noexpandtab
+set shiftwidth=4
+set encoding=utf8
+au FileType gitcommit set tw=70
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let NERDTreeChDirMode=2
+let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
+let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
+let NERDTreeShowBookmarks=1
+map <F3> :NERDTreeToggle<CR>
+
+let g:nerdtree_tabs_open_on_console_startup = 1
+
+map <C-k> <C-w><Up>
+map <C-j> <C-w><Down>
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
+
+map :nn :bnext<cr>
+map :np :bprevious<cr>
+let mapleader = "\<Space>"

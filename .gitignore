@@ -1,0 +1,4 @@
+*.pyc
+*.a
+bin/
+target/
