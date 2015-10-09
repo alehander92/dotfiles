@@ -1,5 +1,8 @@
 # Path to your oh-my-fish.
 set -g OMF_PATH $HOME/.local/share/omf
+set -x GOPATH $HOME/code/a
+set -x GOROOT /usr/local/go
+set -x PATH $PATH $GOPATH $GOPATH/bin $GOROOT/bin
 
 ### Configuration required to load oh-my-fish ###
 # Note: Only add configurations that are required to be set before oh-my-fish is loaded.
@@ -36,3 +39,5 @@ function bu
 end
 
 source /usr/local/bin/virtualenvwrapper.sh
+
+set -x PATH $PATH $GOPATH $GOROOT/bin
