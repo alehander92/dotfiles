@@ -4,7 +4,7 @@ function py
 	git init
 	echo "#$argv[1]" >  README.md
 	subl README.md
-	wget https://www.gitignore.io/api/python .gitignore
+	wget https://www.gitignore.io/api/python -O .gitignore
 	cp ~/LICENSE .
 	touch requirements.txt
 	subl requirements.txt
